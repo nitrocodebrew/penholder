@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Dashboard &rsaquo; Penholder</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard UI concept for pesonal blogging engine, Penholder.">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://kit.fontawesome.com/09f4f047f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-logo">
+                <a href="#" class="logo">
+                    Penholder
+                    <span class="logo-subtext">Administration</span>
+                </a>
+            </div>
+            <form id="header-searchbar">
+                <label for="searchbar" class="visually-hidden">Search the Archives</label>
+                <input type="search" id="searchbar" placeholder="Search posts, comments, categories, and tags...">
+                <button type="button" aria-label="Search blog">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="header-quick-actions">
+                <ul>
+                    <li>
+                        <button type="button" class="quick-action-notifications" aria-label="Notifications">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="quick-action-options" aria-label="Options">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="quick-actions-sign-out" aria-label="Sign out">
+                            <i class="fa-solid fa-power-off"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="layout">
+        <div class="container layout-container">
+            <aside class="sidebar">
+                <div class="user-greeting">
+                    <figure class="user-avatar">
+                        <img src="img/user-avatar.jpg" width="175" height="175" alt="User's avatar">
+                    </figure>
+                    <p>Welcome back, User!</p>
+                </div>
+                <nav class="main-menu" aria-label="Primary navigation">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gauge" aria-hidden="true"></i> 
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-note-sticky" aria-hidden="true"></i> 
+                                Posts
+                            </a>
+                        </li>
+                        <li>
+                            
+                            <a href="#">
+                                <i class="fa-solid fa-comment-dots" aria-hidden="true"></i> 
+                                Comments
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> 
+                                Media
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> 
+                                Categories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-tags" aria-hidden="true"></i> 
+                                Tags
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-file-code" aria-hidden="true"></i>
+                                Templates
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gear" aria-hidden="true"></i> 
+                                Options
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-power-off" aria-hidden="true"></i>
+                                Sign Out
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-content" aria-labelledby="dashboard-heading">
+                <h2 id="dashboard-heading">
+                    <i class="fa-solid fa-gauge" aria-hidden="true"></i> 
+                    Dashboard
+                </h2>
+
+                <div class="insights-summary">
+                    <h3>Insights</h3>
+
+                    <dl>
+                        <div class="insights-row">
+                            <dt class="insights-label">
+                                <i class="fa-solid fa-note-sticky" aria-hidden="true"></i> 
+                                Posts
+                            </dt>
+                            <dd class="insights-counter">23</dd>
+                        </div>
+                        <div class="insights-row">
+                            <dt class="insights-label">
+                                <i class="fa-solid fa-comment-dots" aria-hidden="true"></i> 
+                                Comments
+                            </dt>
+                            <dd class="insights-counter">97</dd>
+                        </div>
+                        <div class="insights-row">
+                            <dt class="insights-label">
+                                <i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> 
+                                Media Uploads
+                            </dt>
+                            <dd class="insights-counter">42</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="activity-log">
+                    <h3>Activity Log</h3>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-images" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You added a <a href="#">media upload</a>
+                            </span>
+                            <time datetime="2026-11-02">November 2, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-comment" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                <a href="#" title="John Doe's website">John Doe</a> commented on your post "<a href="#">The Art of Decluttering Your Workspace for Peak Focus</a>"
+                            </span>
+                            <time datetime="2026-11-02">November 2, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                <a href="#" title="Nick Thompson's website">Nick Thompson</a> replied to <a href="#">your comment</a>
+                            </span>
+                            <time datetime="2026-11-01">November 1, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You edited your post "<a href="#">Why Rest Is the Most Underrated Step in the Creative Process</a>"
+                            </span>
+                            <time datetime="2026-10-28">October 28, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You created a <a href="#">new post</a>
+                            </span>
+                            <time datetime="2026-09-04">September 4, 2026</time>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="action-log">
+                    <h3>Action Log</h3>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You updated your password
+                            </span>
+                            <time datetime="2026-11-02">November 2, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-unlock" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You signed in with User-Agent <code class="user-agent"></code>
+                            </span>
+                            <time datetime="2026-11-02">November 2, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You changed your e-mail address
+                            </span>
+                            <time datetime="2026-10-28">October 28, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-unlock" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You signed in with User-Agent <code class="user-agent"></code>
+                            </span>
+                            <time datetime="2026-10-28">October 28, 2026</time>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
+                            <span class="activity-action-detail">
+                                You updated your password
+                            </span>
+                            <time datetime="2026-09-04">September 4, 2026</time>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quick-post-editor">
+                    <h3>Write a Quick Post</h3>
+
+                    <form id="quick-post-form">
+                        <div class="quick-post-form-row">
+                            <label for="quick-post-title" class="visually-hidden">Title of the Post</label>
+                            <input type="text" id="quick-post-title" placeholder="Title" />
+                        </div>
+                        <div class="quick-post-form-row">
+                            <label for="quick-post-blog" class="visually-hidden">Compose a New Text Post</label>
+                            <textarea id="quick-post-blog" placeholder="Start writing..."></textarea>
+                        </div>
+                        <div class="quick-post-form-row">
+                            <label for="quick-post-category">Choose a Category</label>
+                            <select id="quick-post-category">
+                                <option>Productivity</option>
+                                <option>Food & Drink</option>
+                                <option>Personal Growth</option>
+                                <option>Design & Creativity</option>
+                                <option>Culture & Essays</option>
+                            </select>
+                        </div>
+                        <div class="quick-post-form-row">
+                            <button type="button" class="submit-quick-post">
+                                Publish
+                                <i class="fa-solid fa-file-circle-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="comment-moderation-queue">
+                    <h3>Comment Moderation Queue</h3>
+                    <p><strong>3</strong> comments require attention.</p>
+                    
+                    <div class="moderation-queue-list">
+                        <article class="unmoderated-comment">
+                            <h4>
+                                <a href="#">John Doe</a>
+                            </h4>
+                            <p>
+                                First time commentor, but I've been reading your blog posts for quite some time. 
+                                Just wanted to take a moment to say that it's been fun to watch your journey as a 
+                                developer and designer. I know it's not an easy road, but it's so worth it. Good luck 
+                                on your journey!
+                            </p>
+                            <div class="read-more-link">
+                                <span>(<a href="#">read more...</a>)</span>
+                            </div>
+                            <div class="moderation-post-ref">
+                                <span>
+                                    On your post, "<a href="#">The Art of Decluttering Your Workspace for Peak Focus</a>" 
+                                    <time datetime="2026-11-02">November 2, 2026</time>
+                                </span>
+                            </div>
+
+                            <dl class="moderation-reason">
+                                <dt>Reason</dt>
+                                <dd>John has not commented on any posts yet.</dd>
+                            </dl>
+
+                            <div class="moderation-actions">
+                                <button type="button" class="approve-comment">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i> 
+                                    Approve
+                                </button>
+                                <button type="button" class="reject-comment">
+                                    <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> 
+                                    Reject
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="unmoderated-comment">
+                            <h4>
+                                <a href="#">Joe Blogsalott</a>
+                            </h4>
+                            <p>
+                                Sometimes when I close my eyes, I absolutely cannot see. It is a profound dilemma, much 
+                                like realizing it is always darkest right before it is completely pitch black. As the Mad 
+                                Hatter pointed out, it is incredibly easy to take more than nothing, though you can never 
+                                take less. Ultimately, never forget your absolute uniqueness—exactly like everyone else.
+                            </p>
+                            <div class="read-more-link">
+                                <span>(<a href="#">read more...</a>)</span>
+                            </div>
+                            <div class="moderation-post-ref">
+                                <span>
+                                    On your post, "<a href="#">From Bean to Cup: Understanding the Fundamentals of Single-Origin Coffee</a>" 
+                                    <time datetime="2026-10-30">October 30, 2026</time>
+                                </span>
+                            </div>
+
+                            <dl class="moderation-reason">
+                                <dt>Reason</dt>
+                                <dd>Joe's comment may contain off-topic or nonsensical content.</dd>
+                            </dl>
+
+                            <div class="moderation-actions">
+                                <button type="button" class="approve-comment">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i> 
+                                    Approve
+                                </button>
+                                <button type="button" class="reject-comment">
+                                    <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> 
+                                    Reject
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="unmoderated-comment">
+                            <h4>
+                                <a href="#">Alice Johnson</a>
+                            </h4>
+                            <p>
+                                Wow, this is exactly what I was looking for! I've been reading a lot of articles on this topic 
+                                lately, and your breakdown is by far the most detailed and easy to understand. The points you made 
+                                about maintaining the overall quality of the discussion really resonated with me, especially since 
+                                I've been trying to improve my own site's engagement strategy recently.
+                            </p>
+                            <div class="read-more-link">
+                                <span>(<a href="#">read more...</a>)</span>
+                            </div>
+                            <div class="moderation-post-ref">
+                                <span>
+                                    On your post, "<a href="#">Building Better Habits: Small Daily Changes That Yield Big Results</a>" 
+                                    <time datetime="2026-10-20">October 20, 2026</time>
+                                </span>
+                            </div>
+
+                            <dl class="moderation-reason">
+                                <dt>Reason</dt>
+                                <dd>Alice's comment could possibly contain spam.</dd>
+                            </dl>
+
+                            <div class="moderation-actions">
+                                <button type="button" class="approve-comment">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i> 
+                                    Approve
+                                </button>
+                                <button type="button" class="reject-comment">
+                                    <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> 
+                                    Reject
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+
+                    <div class="latest-blogs">
+                        <article class="blog-entry preloaded">
+                            <h4>
+                                <a href="#">
+                                    The Art of Decluttering Your Workspace for Peak Focus
+                                </a>
+                            </h4>
+
+                            <figure class="blog-post-thumb">
+                                <img src="img/post-thumb-decluttering.jpg" width="220" height="180" alt="Thumbnail image for 'The Art of Decluttering Your Workspace for Peak Focus'" loading="lazy">
+                            </figure>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> 
+                                    <a href="#" title="All posts filed under Productivity">Productivity</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                                    <ul>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #workspace">#workspace</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #minimalism">#minimalism</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #focus">#focus</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #daily-routine">#daily-routine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #organization">#organization</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                    <a href="#" title="6 comments on this post">6</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                    <time datetime="2026-11-02">November 2, 2026</time>
+                                </li>
+                            </ul>
+
+                            <div class="blog-entry-cta">
+                                <button type="button" class="edit-blog-post">
+                                    <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+                                    Edit 
+                                </button>
+                                <button type="button" class="delete-blog-post">
+                                    <i class="fa-solid fa-trash" aria-hidden="true"></i> 
+                                    Delete
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="blog-entry preloaded">
+                            <h4>
+                                <a href="#">
+                                    From Bean to Cup: Understanding the Fundamentals of Single-Origin Coffee
+                                </a>
+                            </h4>
+
+                            <figure class="blog-post-thumb">
+                                <img src="img/post-thumb-understanding-coffee.jpg" width="220" height="180" alt="Thumbnail image for 'From Bean to Cup: Understanding the Fundamentals of Single-Origin Coffee'" loading="lazy">
+                            </figure>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> 
+                                    <a href="#" title="All posts filed under Food & Drink">Food & Drink</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                                    <ul>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #coffee">#coffee</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #brewing">#brewing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #craft">#craft</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #morning-routine">#morning-routine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #taste-guide">#taste-guide</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                    <a href="#" title="14 comments on this post">14</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                    <time datetime="2026-10-28">October 28, 2026</time>
+                                </li>
+                            </ul>
+
+                            <div class="blog-entry-cta">
+                                <button type="button" class="edit-blog-post">
+                                    <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+                                    Edit 
+                                </button>
+                                <button type="button" class="delete-blog-post">
+                                    <i class="fa-solid fa-trash" aria-hidden="true"></i> 
+                                    Delete
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="blog-entry preloaded">
+                            <h4>
+                                <a href="#">
+                                    Building Better Habits: Small Daily Changes That Yield Big Results
+                                </a>
+                            </h4>
+
+                            <figure class="blog-post-thumb">
+                                <img src="img/post-thumb-better-habits.jpg" width="220" height="180" alt="Thumbnail image for 'Building Better Habits: Small Daily Changes That Yield Big Results'" loading="lazy">
+                            </figure>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> 
+                                    <a href="#" title="All posts filed under Personal Growth">Personal Growth</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                                    <ul>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #habits">#habits</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #mindfulness">#mindfulness</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #wellness">#wellness</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #self-improvement">#self-improvement</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #goals">#goals</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                    <a href="#" title="11 comments on this post">11</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                    <time datetime="2026-09-04">September 4, 2026</time>
+                                </li>
+                            </ul>
+
+                            <div class="blog-entry-cta">
+                                <button type="button" class="edit-blog-post">
+                                    <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+                                    Edit 
+                                </button>
+                                <button type="button" class="delete-blog-post">
+                                    <i class="fa-solid fa-trash" aria-hidden="true"></i> 
+                                    Delete
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="blog-entry preloaded">
+                            <h4>
+                                <a href="#">
+                                    Why Rest Is the Most Underrated Step in the Creative Process
+                                </a>
+                            </h4>
+
+                            <figure class="blog-post-thumb">
+                                <img src="img/post-thumb-creative-process.jpg" width="220" height="180" alt="Thumbnail image for 'Why Rest Is the Most Underrated Step in the Creative Process'" loading="lazy">
+                            </figure>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> 
+                                    <a href="#" title="All posts filed under Design & Creativity">Design & Creativity</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                                    <ul>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #creativity">#creativity</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #burnout-prevention">#burnout-prevention</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #design-thinking">#design-thinking</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #inspiration">#inspiration</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #work-life-balance">#work-life-balance</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                    <a href="#" title="9 comments on this post">9</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                    <time datetime="2026-08-24">August 24, 2026</time>
+                                </li>
+                            </ul>
+
+                            <div class="blog-entry-cta">
+                                <button type="button" class="edit-blog-post">
+                                    <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+                                    Edit 
+                                </button>
+                                <button type="button" class="delete-blog-post">
+                                    <i class="fa-solid fa-trash" aria-hidden="true"></i> 
+                                    Delete
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="blog-entry preloaded">
+                            <h4>
+                                <a href="#">
+                                    The Resurgence of Physical Media in an Increasingly Digital World
+                                </a>
+                            </h4>
+
+                            <figure class="blog-post-thumb">
+                                <img src="img/post-thumb-creative-process.jpg" width="220" height="180" alt="Thumbnail image for 'The Resurgence of Physical Media in an Increasingly Digital World'" loading="lazy">
+                            </figure>
+
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> 
+                                    <a href="#" title="All posts filed under Cultures & Essays">Culture & Essays</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                                    <ul>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #media">#media</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #analog">#analog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #print">#print</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #culture">#culture</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="All posts tagged with #storytelling">#storytelling</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                                    <a href="#" title="23 comments on this post">23</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                    <time datetime="2026-08-16">August 16, 2026</time>
+                                </li>
+                            </ul>
+
+                            <div class="blog-entry-cta">
+                                <button type="button" class="edit-blog-post">
+                                    <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+                                    Edit 
+                                </button>
+                                <button type="button" class="delete-blog-post">
+                                    <i class="fa-solid fa-trash" aria-hidden="true"></i> 
+                                    Delete
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-copyright">
+                Copyright &copy; 2026 &#8212; John Smicklo
+            </p>
+
+            <p class="repo-link">
+                The source code for this project can be found on 
+                <a href="https://github.com/nitrocodebrew/penholder" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </a>.
+            </p>
+
+        </div>
+    </footer>
+</body>
+</html>
